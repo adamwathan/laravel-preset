@@ -1,0 +1,21 @@
+{
+    "name": "adamwathan/laravel-preset",
+    "description": "Adam Wathan's Laravel Frontend Preset",
+    "keywords": ["laravel", "preset"],
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "NothingWorks\\LaravelPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NothingWorks\\LaravelPreset\\PresetServiceProvider"
+            ]
+        }
+    }
+}
