@@ -2,8 +2,8 @@
 /public/hot
 /public/storage
 /public/build
-/public/css
-/public/js
+/public/css/app.css
+/public/js/app.js
 /public/mix-manifest.json
 /storage/*.key
 /vendor
@@ -14,3 +14,4 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .env
+.DS_Store
