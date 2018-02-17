@@ -14,16 +14,13 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Route::macro('multiformat', function () {
-            $this->uri = $this->uri . '.{_extension?}';
-            return $this;
+            return $this->setUri($this->uri() . '.{_format?}');
         });
+
         Request::macro('match', function ($responses, $defaultFormat = 'html') {
-            if ($this->route()->parameter('_extension') !== null) {
-                return value(array_get($responses, $this->route()->parameter('_extension'), function () {
-                    abort(404);
-                }));
-            }
-            return value(array_get($responses, $this->format($defaultFormat)));
+            return value(array_get($responses, $this->route()->parameter('_format', $this->format($defaultFormat)), function () {
+                abort(404);
+            }));
         });
     }
     /**
