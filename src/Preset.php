@@ -19,6 +19,7 @@ class Preset extends BasePreset
         static::updateTemplates();
         static::removeNodeModules();
         static::updateGitignore();
+        static::addMacros();
     }
 
     protected static function updatePackageArray(array $packages)
@@ -74,5 +75,10 @@ class Preset extends BasePreset
     protected static function updateGitignore()
     {
         copy(__DIR__.'/stubs/gitignore-stub', base_path('.gitignore'));
+    }
+
+    protected static function addMacros()
+    {
+        copy(__DIR__.'/stubs/app/Providers/AppServiceProvider.php', base_path('app/Providers/AppServiceProvider.php'));
     }
 }
