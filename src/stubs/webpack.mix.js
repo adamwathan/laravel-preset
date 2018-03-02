@@ -13,4 +13,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
       }),
     ]
   })
-  .purgeCss()
+
+if (mix.inProduction()) {
+    mix.purgeCss()
+      .version()
+}
