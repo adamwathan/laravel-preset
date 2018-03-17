@@ -27,7 +27,7 @@ class Preset extends BasePreset
             'laravel-mix-purgecss' => '^1.0',
             'postcss-cssnext' => '^3.1',
             'postcss-import' => '^11.0',
-            'tailwindcss' => '>=0.1.0',
+            'tailwindcss' => '>=0.5.1',
         ], Arr::except($packages, [
             'bootstrap',
             'bootstrap-sass',
