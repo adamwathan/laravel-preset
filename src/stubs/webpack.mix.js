@@ -6,7 +6,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
   .options({
     postCss: [
       require('postcss-import')(),
-      require('tailwindcss')(),
+      require('tailwindcss')(/* './path/to/tailwind.js' */),
       require('postcss-cssnext')({
         // Mix adds autoprefixer already, don't need to run it twice
         features: { autoprefixer: false }
