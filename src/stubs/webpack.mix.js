@@ -7,14 +7,11 @@ mix.js('resources/assets/js/app.js', 'public/js')
     postCss: [
       require('postcss-import')(),
       require('tailwindcss')(/* './path/to/tailwind.js' */),
-      require('postcss-cssnext')({
-        // Mix adds autoprefixer already, don't need to run it twice
-        features: { autoprefixer: false }
-      }),
+      require('postcss-nesting')(),
     ]
   })
   .purgeCss()
 
 if (mix.inProduction()) {
-    mix.version()
+  mix.version()
 }

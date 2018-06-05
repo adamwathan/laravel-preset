@@ -5,7 +5,7 @@ A Laravel frontend preset that scaffolds out new applications just the way I lik
 What it includes:
 
 - [Tailwind CSS](https://tailwindcss.com)
-- [cssnext](http://cssnext.io/)
+- [postcss-nesting](https://github.com/jonathantneal/postcss-nesting) for nested CSS support
 - [Purgecss](https://www.purgecss.com/), via [spatie/laravel-mix-purgecss](https://github.com/spatie/laravel-mix-purgecss)
 - [Vue.js](https://vuejs.org/)
 - Removes Bootstrap and jQuery
