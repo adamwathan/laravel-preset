@@ -1,11 +1,11 @@
-@import "tailwindcss/preflight";
+@tailwind base;
 
 /* Add custom base styles here... */
 
-@import "tailwindcss/components";
+@tailwind components;
 
 /* Add custom components here... */
 
-@import "tailwindcss/utilities";
+@tailwind utilities;
 
 /* Add custom utilities here... */
