@@ -2,6 +2,9 @@
 
 @section('body')
     <div class="min-h-screen flex items-center justify-center">
-        <h1 class="text-5xl text-purple font-sans">Greetings.</h1>
+    	<div class="text-center">
+	        <h1 class="text-5xl text-purple-500 font-sans">Greetings.</h1>
+	        <p>Laravel &bull; Tailwind</p>
+    	</div>
     </div>
 @endsection
