@@ -1,3 +1,5 @@
+> **Note: This is no longer maintained as I don't actually use it myself, I just set this stuff up from scratch each time since it only takes a minute to do and Laravel 6 ships with less boilerplate to delete.
+
 # 🚀 Adam Wathan's Laravel Frontend Preset
 
 A Laravel frontend preset that scaffolds out new applications just the way I like 'em 👌🏻
