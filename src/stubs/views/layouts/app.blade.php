@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
   </head>
-  <body class="font-sans antialiased text-black leading-tight">
+  <body class="font-sans antialiased text-gray-800 leading-tight">
     <div id="app">
       @yield('body')
     </div>
